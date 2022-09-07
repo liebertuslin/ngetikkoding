@@ -2,28 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Ngetikkoding</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+  <meta charset="utf-8">
+  <title>Ngetikkoding</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Free HTML Templates" name="keywords">
+  <meta content="Free HTML Templates" name="description">
+  <!-- Favicon -->
+  <link href="img/logoweb.png" rel="icon">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Libraries Stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/team-project.css">
+  <link rel="stylesheet" href="css.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      /* color: #6c757d; */
+      color: black;
+      text-align: left;
+      background-color: #ffffff;
+    }
+    
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
 
-    <!-- Favicon -->
-    <link href="img/logoweb.png" rel="icon">
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!-- Libraries Stylesheet --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/team-project.css">
+    .container .align-items-center .col-lg-7 p, h1, h2, h3 {
+      color: white;
+    }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -45,11 +68,12 @@
                 <a href="#testimonial" class="nav-item nav-link">Team Projects</a>
                 <a href="#contact" class="nav-item nav-link">Contact Us</a>
             </div>
-            <a href="" class="btn btn-menu d-none d-lg-block" style="background-color:crimson; color: #ffffff;border:none;">Kontak Kami</a>
+            <!-- <a href="" class="ml-4 h4"></a> -->
+            <!-- <a href="" class="btn btn-outline-warning ml-4 text-dark" onclick="myFunction()">Light/Dark</a> -->
+            <button onclick="myFunction()"><i class="fa-solid fa-moon"></i></button>
         </div>
     </nav>
     <!-- Navbar End -->
-
  
 
     <!-- Header Start -->
@@ -71,21 +95,21 @@
     </div>
     <!-- Header End -->
 
-
+    
     <!-- About Start -->
     <div class="container-fluid py-5" id="about">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-capitalize text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="display-2 text-capitalize text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
                 <h1 class="position-absolute text-capitalize text-primary">About Us</h1>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/aboutt.jpg" alt="">
+                    <img class="img-fluid rounded w-100" src="img/coding.jpg" alt="">
                 </div>
                 <div class="col-lg-7">
                     <h3 class="mb-4">Web Developer & Desktop Developer</h3>
-                    <p><a href="https://www.Ngetikkoding.com">Ngetikkoding</a> merupakan salah satu platform website yang bergerak dibidang Teknologi Informasi yang menawarkan jasa pembuatan aplikasi, disini jangkauan kami adalah Mahasiswa, Toko dll.<br>
+                    <p><a href="index.html">Ngetikkoding</a> merupakan salah satu platform website yang bergerak dibidang Teknologi Informasi yang menawarkan jasa pembuatan aplikasi, disini jangkauan kami adalah Mahasiswa, Toko dll.<br>
                     <p><b>Note:</b> <em>Dapat merequest aplikasi sesuai kebutuhan baik itu berbasis <b>Website</b> maupun <b>Desktop</em></b></p>
                     </p>
                     <b><u>Projects:</u></b>
@@ -102,10 +126,10 @@
                         <li class="list-unstyled"><a href="mailto:ngetikoding@gmail.com">Ngetikoding@gmail.com</a></li>
                     </div>
                     <div class="row col-6">
-                        <li class="list-unstyled"><a href="https://wa.me/6281346111649" target="_blank"><i class="fa-brands fa-whatsapp"></i> Libertus Lin</a></li>
+                        <li class="list-unstyled"><a href="https://wa.me/6281346111649" target="_blank"><i class="fa-brands fa-whatsapp"></i> Libertus</a></li>
                     </div>
                     <div class="row col-6">
-                        <li class="list-unstyled"><a href="https://wa.me/6282250094832" target="_blank"><i class="fa-brands fa-whatsapp"></i> Andrianus Wandi</a></li>
+                        <li class="list-unstyled"><a href="https://wa.me/6282250094832" target="_blank"><i class="fa-brands fa-whatsapp"></i> Andr. Wandi</a></li>
                     </div>
                 </div>
             </div>
@@ -113,13 +137,12 @@
     </div>
     <!-- About End -->
 
-
     
     <!-- Skill Start -->
     <div class="container-fluid py-5" id="skill">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-capitalize text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="display-2 text-capitalize text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
                 <h1 class="position-absolute text-capitalize text-primary">Our Skills</h1>
             </div>
             <div class="row align-items-center">
@@ -191,7 +214,7 @@
     <div class="container-fluid pt-5" id="service">
         <div class="container">
             <div class="service-h4 position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-capitalize text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
+                <h1 class="display-2 text-capitalize text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
                 <h1 class="position-absolute text-capitalize text-primary">Our Services</h1>
             </div>
             <div class="row pb-3 d-flex align-items-center justify-content-center">
@@ -245,7 +268,7 @@
     <div class="container-fluid pt-5 pb-3" id="portfolio">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-capitalize text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
+                <h1 class="display-2 text-capitalize text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
                 <h1 class="position-absolute text-capitalize text-primary">Our Projects</h1>
             </div>
             <div class="row">
@@ -329,12 +352,12 @@
     <div class="container-fluid py-5" id="testimonial">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-capitalize text-white" style="-webkit-text-stroke: 1px #dee2e6;">Teams</h1>
+                <h1 class="display-2 text-capitalize text-white" style="-webkit-text-stroke: 1px #dee2e6;">Teams</h1>
                 <h1 class="position-absolute text-capitalize text-primary">Our Team</h1>
             </div>
             <div class="container">
                 <div class="row team-project">
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-5 col-sm-6">
                         <div class="our-team">
                             <div class="pic">
                                 <img src="./img/libertus.png">
@@ -350,12 +373,12 @@
                         </div>
                     </div>
             
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-5 col-sm-6">
                         <div class="our-team">
                             <div class="pic">
                                 <img src="./img/wandi.png">
                             </div>
-                            <h3 class="title">Andrianus Wandi</h3>
+                            <h3 class="title">Andrianus Wandi, S.Kom.</h3>
                             <span class="post">Front-End Dev & Desktop App</span>
                             <ul class="social">
                                 <li><a href="#" class="fa fa-whatsapp"></a></li>
@@ -377,7 +400,7 @@
     <div class="container-fluid py-5" id="contact">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-capitalize text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="display-2 text-capitalize text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
                 <h1 class="position-absolute text-capitalize text-primary">Contact Us</h1>
             </div>
             <div class="row justify-content-center">
@@ -409,7 +432,7 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
-                                <button class="btn btn-outline-info" id="tombol" onclick="kirimPesan()" type="submit" id="sendMessageButton">Pesan Aplikasi Sekarang</button>
+                                <button class="btn btn-outline-info" id="tombol" onclick="kirimPesan()" type="submit" id="sendMessageButton">Kirim Pesan Sekarang</button>
                             </div>
                         </form>
                     </div>
@@ -423,7 +446,7 @@
     <!-- Footer Start -->
     <div class="container-fluid bg-primary text-white mt-5 py-1 px-sm-1 px-md-5">
         <div class="container text-center py-5">
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Ngetikkoding</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="#">Ngetikkoding</a>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="">Ngetikkoding</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="#">Ngetikkoding</a>
             </p>
         </div>
     </div>
@@ -448,12 +471,18 @@
     <!-- <script src="lib/lightbox/js/lightbox.min.js"></script> -->
 
     <!-- Contact Javascript File -->
-    <!-- <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script> -->
     <script src="./js/script.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+         alert('Sorry masih dalam proses maintanance!');
+      }
+      </script>
 </body>
 
 </html>
